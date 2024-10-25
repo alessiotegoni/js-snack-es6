@@ -8,6 +8,12 @@ const racingBikes = [
   { name: "Giant TCR Advanced", weight: 7.1 },
 ];
 
+console.log(
+  racingBikes.reduce((lightest, current) =>
+    current.weight < lightest.weight ? current : lightest
+  )
+);
+
 // Snack 2
 
 const footballTeams = [
